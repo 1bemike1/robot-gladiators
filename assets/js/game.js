@@ -60,7 +60,13 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
     }
     // if no (false), ask question again by running fight() again
     else {
-      fight();
-    }  
-    
+      fight(); 
+    }
+    // if player doesn't choose FIGHT or SKIP in prompt  
+} else {
+    window.alert("You need to pick a valid option. Try again!")
 }
+}; //end of fight function
+
+// run fight function to start game
+fight();
