@@ -49,10 +49,9 @@ var fight = function (enemyName) {
       playerMoney = playerMoney + 20;
       // leave while() loop since enemy is dead
       break;
-      } else {
-        window.alert(enemyName + " still has " + enemyHealth + " health left.");
-      }
-
+    } else {
+      window.alert(enemyName + " still has " + enemyHealth + " health left.");
+    }
       // remove players's health by subtracting the amount set in the enemyAttack variable
       playerHealth = playerHealth - enemyAttack;
       console.log(
@@ -63,9 +62,12 @@ var fight = function (enemyName) {
       if (playerHealth <= 0) {
         window.alert(playerName + " has died!");
         break;
+      } else {
+        window.alert(enemyName + " still has " + enemyHealth + " health left.");
       }
   }  // end of while loop
 };// end of fight function
+
  for (var i = 0; i < enemyNames.length; i++) {
   // Welcome to Robot Gladiators!
   if (playerHealth > 0) {
