@@ -89,6 +89,7 @@ var fight = function (enemyName) {
  // if player isn't alive, stop the game
  else {
   window.alert('You have lost your robot in battle! Game Over!');
+  break;
  }
 }
 
